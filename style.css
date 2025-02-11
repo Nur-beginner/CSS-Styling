@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: arial;
+  background: black;
+}
+body > h1{
+  font-weight: bold;
+  text-shadow: 0 0 15px white;
+  font-size: 3rem;
+/*  dibawah ini bisa di custom warna nya  */
+  background: linear-gradient(
+    45deg,
+    rgb(255, 0, 255),
+    blue,
+    magenta,
+    white,
+    blue,
+    rgb(255, 0, 255)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 2.5s ease-in 1 forwards;
+}
+@keyframes rainbow {
+  to {
+    background-position: 200%;
+  }
+}
